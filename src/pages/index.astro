@@ -1,0 +1,22 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import LandingHero from '../components/LandingHero.astro';
+import FeaturedGallery from '../components/FeaturedGallery.astro';
+import FeaturedWorkScroll from '../components/FeaturedWorkScroll.astro';
+---
+
+<MainLayout>
+  <!-- Use the background version -->
+  <LandingHero 
+    variant="with-background"
+    backgroundImage="public/images/bg-landing-page.jpg"
+    opacity={0.6}
+    alignment="center"
+  />
+  
+  <FeaturedWorkScroll />
+  
+  <section class="featured-section py-20">
+    <FeaturedGallery />
+  </section>
+</MainLayout>

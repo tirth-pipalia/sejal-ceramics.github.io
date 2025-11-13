@@ -1,0 +1,56 @@
+---
+import siteConfig from '../../site.config.mjs';
+
+export interface Props {
+  variant?: 'simple' | 'with-background';
+  backgroundImage?: string;
+  opacity?: number;
+  alignment?: 'left' | 'center';
+}
+
+const { 
+  variant = 'simple',
+  backgroundImage = '/public/images/bg-landing-pages.jpg',
+  opacity = 0.6,
+  alignment = 'center'
+} = Astro.props;
+
+const owner = siteConfig.owner;
+const business = siteConfig.business;
+const base = import.meta.env.BASE_URL;
+---
+
+<section class="relative min-h-screen flex items-center justify-center py-20 md:py-16 overflow-hidden">
+  <!-- Background Image -->
+  {variant === 'with-background' && (
+    <div
+      class="absolute inset-0 z-0"
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}
+    >
+      <!-- Overlay for opacity -->
+      <div class={`absolute inset-0 bg-white opacity-${opacity * 100}`}></div>
+    </div>
+  )}
+
+  <!-- Content -->
+  <div class={`container ${alignment === 'center' ? 'text-center' : 'text-left'} relative z-10`}>
+    <h1 id="logo" class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+      {business} Photography
+    </h1>
+    <p class="mt-4 text-base md:text-lg text-gray-700">A place to showcase my photography</p>
+    <a
+      href={`${base}/collections`}
+      class="mt-8 inline-block px-6 py-3 border-2 border-black rounded-md
+             hover:bg-black hover:text-white transition-all duration-300
+             text-sm md:text-base font-medium
+             transform hover:scale-105 active:scale-95"
+    >
+      View Gallery
+    </a>
+  </div>
+</section>
