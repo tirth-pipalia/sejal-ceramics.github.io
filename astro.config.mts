@@ -1,15 +1,14 @@
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 
-// https://astro.build/config
 export default defineConfig({
-	site: 'https://sejal-ceramics.github.io',
-	base: '/',
-	output: 'static',
-	build: {
-		assets: 'assets'
-	},
-	vite: {
-		plugins: [tailwindcss()],
-	},
+  site: 'https://tirth-pipalia.github.io',
+  base: '/sejal-ceramics.github.io/', // Important for project pages
+  output: 'static',
+  build: {
+    assets: 'assets'
+  },
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });
