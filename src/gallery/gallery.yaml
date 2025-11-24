@@ -1,10 +1,14 @@
 collections:
   - id: nature
     name: Nature
+    pdfUrl: /sejal-ceramics.github.io/pdfs/slab.pdf  # Add PDF for Nature tab
   - id: travel
     name: Travel
+    pdfUrl: /sejal-ceramics.github.io/pdfs/sona_look_book_2024.pdf  # Add PDF for Travel tab
   - id: street
     name: Street
+    pdfUrl: /sejal-ceramics.github.io/pdfs/street.pdf  # Add PDF for Street tab
+
 images:
   - path: nature/nature-2.jpg
     meta:
@@ -65,7 +69,7 @@ images:
       collections:
         - nature
     exif: {}
-  - path: street/stree-1.jpg
+  - path: street/street-1.jpg
     meta:
       title: Street photography 1
       description: Urban scene capturing the essence of city life.

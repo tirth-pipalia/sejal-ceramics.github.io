@@ -1,3 +1,4 @@
+/* GLightbox Customizations */
 .glightbox-container .gslide-image img {
 	max-width: 95%;
 	max-height: 95%;
@@ -5,6 +6,8 @@
 	width: auto;
 	object-fit: contain;
 	display: block;
+	border-radius: 12px;
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
 .glightbox-container .gslide {
@@ -17,4 +20,72 @@
 	max-width: 90%;
 	color: #ccc;
 	font-size: 0.875rem;
+	background: rgba(0, 0, 0, 0.8);
+	padding: 1rem;
+	border-radius: 8px;
+	backdrop-filter: blur(10px);
+}
+
+/* Enhanced PDF Button Styles */
+.download-pdf-btn {
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	color: white;
+	padding: 1rem 2rem;
+	border-radius: 12px;
+	text-decoration: none;
+	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	position: relative;
+	overflow: hidden;
+}
+
+.download-pdf-btn::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+	transition: left 0.5s;
+}
+
+.download-pdf-btn:hover::before {
+	left: 100%;
+}
+
+.download-pdf-btn:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 15px 35px rgba(102, 126, 234, 0.4);
+	background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+}
+
+/* Keep this animation - it might be useful for future enhancements */
+@keyframes gridFadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+	.download-pdf-btn {
+		padding: 0.75rem 1.5rem;
+		font-size: 0.9rem;
+	}
+	
+	.glightbox-container .gslide-image img {
+		max-width: 98%;
+		max-height: 98%;
+	}
 }

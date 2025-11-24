@@ -2,13 +2,15 @@
 title: About me
 ---
 
-### Hi, I'm Sara Richard 👋
+<!-- ### Hi, I'm Raj Pipalia 👋 -->
 
-I've been a photographer for over 10 years, focusing primarily on landscape and portrait photography. My journey began
-with a simple point-and-shoot camera while traveling through the mountains of Colorado, which sparked a passion that has
-taken me across the globe.
-My approach to photography centers on finding the extraordinary in ordinary moments. I believe that beauty exists
-everywhere – in urban streets, remote wilderness, and human connections. My goal is to capture these fleeting instances
-in a way that allows viewers to see the world through a different lens.
-When I'm not behind the camera, you can find me hiking in national parks, exploring new cities, or enjoying a cup of
-coffee at local cafés while planning my next photo adventure.
+We are dedicated to transforming spaces through the timeless beauty and durability of ceramic art. Specializing in premium tiles and sanitary ware, we blend innovative design with meticulous craftsmanship to create products that are not just functional, but foundational to your lifestyle. Every piece is a testament to our commitment to quality, offering elegant solutions for kitchens, bathrooms, and beyond that are built to inspire and endure.
+
+
+For generations, we have honed the art of ceramics, channeling expertise and passion into every tile and fixture we create. Our curated collections of sanitary ware and tiles are born from a fusion of traditional techniques and contemporary design, ensuring each product offers superior strength, easy maintenance, and enduring style. We believe in creating the essential elements that turn a house into a home, with quality you can see and feel.
+
+
+
+We provide the foundation for beautiful and hygienic living spaces. As specialists in ceramic tiles and sanitary ware, our focus is on delivering products that perfectly marry form and function. From stunning tiles that set the tone of a room to reliable sanitary fixtures designed for daily use, we offer solutions that combine aesthetic appeal with unparalleled durability and ease of care, ensuring your investment lasts for years to come.
+
+
